@@ -1,14 +1,16 @@
-import { Fragment } from "react/jsx-runtime"
+import { Fragment } from "react/jsx-runtime";
+import {cat1} from './images/cat1.png';
 export function Main(){
     return <Fragment>
-        <h1>Reason I was exited to learn React!</h1>
-        <ol>
-          <li>React is a popular Library , so i will be able to fit in with all the coolest devs out there!</li>
-          <li>I would likely to get a job as a fontend developer If i know React</li>
-          <li>Was originally created by Jorder</li>
-          <li>Has well over 200k stars on Github</li>
-          <li>It maintained by Meta</li>
-          <li>Powers thousands of enterprice apps, Including mobile apps</li>
-        </ol>
+       <div>
+         <img src={cat1}/>
+         <h3>Mr.WhiskirSon</h3>
+         <div>
+            <img src="./images/phn.png"/>
+            <span>(212)555-1234</span>
+            <img src="./images/mail.png"/>
+            <span>mr.whiskirson@catnap.meow</span>
+         </div>
+       </div>
     </Fragment>
 }
