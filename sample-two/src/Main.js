@@ -1,16 +1,24 @@
-import { Fragment } from "react/jsx-runtime";
-import {cat1} from './images/cat1.png';
-export function Main(){
-    return <Fragment>
-       <div>
-         <img src={cat1}/>
-         <h3>Mr.WhiskirSon</h3>
-         <div>
-            <img src="./images/phn.png"/>
-            <span>(212)555-1234</span>
-            <img src="./images/mail.png"/>
-            <span>mr.whiskirson@catnap.meow</span>
+
+// import cat1 from './images/cat1.png';
+// import cat2 from './images/cat2.png';
+// import cat3 from './images/cat3.png';
+// import cat4 from './images/cat4.png';
+import phn from './images/phn.png';
+import mail from './images/mail.png'
+export default function Main(props){
+    console.log(props)
+    return <div>
+       <div className="user-details-card">
+         <img src={props.img} className="user-img"/>
+         <h3>{props.name}</h3>
+         <div className="detail">
+            <img src={phn} className="contact-img"/>
+            <span>{props.phn}</span>
+        </div>
+        <div className="detail">
+            <img src={mail} className="contact-img"/>
+            <span>{props.mail}</span>
          </div>
        </div>
-    </Fragment>
+    </div>
 }
