@@ -3,14 +3,7 @@ function Header(){
     return (
     <div className='nav-bar'>
         <img src={logo} width="60px"/>
-        <nav>
-          <ul className='nav-list'>
-            <li>Pricing</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-        
+        <span>ReactFacts</span>
     </div>
     )
 }
