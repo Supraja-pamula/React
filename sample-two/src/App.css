@@ -16,3 +16,46 @@
   color: #fff;
   font-size: 18px;
 }
+
+.image-container{
+  height: 300px;
+  width: 200px;
+  border-radius: 10px;
+}
+.image-container img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    /* box-shadow: 10px 10px 5px #aaaaaa; */
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.main-container:hover{
+  box-shadow: 15px 15px 15px 10px #aaaaaa;
+}
+.text-container{
+  margin-left: 20px;
+}
+.text-container h2{
+  color: #333;
+  margin: 0px;
+}
+.text-container p{
+  margin: 0px;
+  color: #666;
+  margin-top: 10px;
+}
+.text-container li{
+  font-style: italic;
+  color: #333;
+}
+.view-more{
+  text-decoration: none;
+  color: #e98888;
+  font-weight: bold;
+}
