@@ -8,12 +8,12 @@ function App() {
     console.log(country)
     return (
     <Main 
-      country={country}
-      // image={country.image}
-      // title={country.title}
-      // description={country.description} 
-      // list={country.list}
-      // view={country.view}
+      // country={country}
+      image={country.image}
+      title={country.title}
+      description={country.description} 
+      list={country.list}
+      view={country.view}
    />)
   })
   return (
