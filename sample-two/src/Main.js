@@ -1,14 +1,20 @@
-import { Fragment } from "react/jsx-runtime"
-export function Main(){
-    return <Fragment>
-        <h1>Reason I was exited to learn React!</h1>
-        <ol>
-          <li>React is a popular Library , so i will be able to fit in with all the coolest devs out there!</li>
-          <li>I would likely to get a job as a fontend developer If i know React</li>
-          <li>Was originally created by Jorder</li>
-          <li>Has well over 200k stars on Github</li>
-          <li>It maintained by Meta</li>
-          <li>Powers thousands of enterprice apps, Including mobile apps</li>
-        </ol>
-    </Fragment>
+
+export function Main(props){
+  console.log(props)
+    return (
+      <div className="main-container">
+         <div className="image-container">
+           <img src={props.image} alt={props.title} />
+         </div>
+         <div className="text-container">
+           <h2>{props.title}</h2>
+           <p>{props.description}</p>
+           <ul>
+            {props.list.map((item, index)=><li key={index}>{item}</li>)}
+           </ul>
+           <a href={props.view} target="_blank" className="view-more">View More</a>
+         </div>
+      </div>
+    )
+        
 }

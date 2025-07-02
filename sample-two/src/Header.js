@@ -1,16 +1,9 @@
-import logo from './logo.svg';
+import logo from './image.png';
 function Header(){
     return (
     <div className='nav-bar'>
         <img src={logo} width="60px"/>
-        <nav>
-          <ul className='nav-list'>
-            <li>Pricing</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-        
+        <span>My Travel journal</span>    
     </div>
     )
 }
