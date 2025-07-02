@@ -6,12 +6,15 @@ import { Main } from './Main';
 function App() {
   let countryDetailElement =countryData.map((country)=>{
     console.log(country)
-    return (<Main image={country.image}
-      title={country.title}
-      description={country.description} 
-      list={country.list}
-      view={country.view}
-           />)
+    return (
+    <Main 
+      country={country}
+      // image={country.image}
+      // title={country.title}
+      // description={country.description} 
+      // list={country.list}
+      // view={country.view}
+   />)
   })
   return (
     <>
