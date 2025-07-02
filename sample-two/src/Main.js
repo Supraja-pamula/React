@@ -1,4 +1,4 @@
-import { Fragment } from "react/jsx-runtime"
+
 export function Main(props){
   console.log(props)
     return (
