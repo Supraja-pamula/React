@@ -1,37 +1,44 @@
-.nav-bar span{
-  color:#61dafb;
-  font-weight: 600;
+.counter-section{
+  min-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+.counter-container{
+  background-color: black;
+}
+.counter-container h3{
+  color: #fff;
+  margin-bottom: 0px;
+}
+.counter-app-body{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.count{
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
   font-size: 20px;
 }
-.nav-bar{
-  background-color: #21222A;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
-body{
-  font-family: Inter,sans-serif;
-  color: #fff;
-}
-.main-content{
-  background-image: url("./logo.svg");
-  background-blend-mode: color;
-  background-repeat: no-repeat;
-  background-color: #282D35;
-  padding: 30px;
-  background-position: right;
-  /* height: 100vh; */
-}
-.main-content h1{
-  margin: 0px;
-  font-size: 40px;
-  margin-bottom: 40px;
-}
-.ul-list li::marker{
-  color: #61dafb;
-  font-size: 2rem;
-}
-.ul-list li{
-  max-width: 400px;
-  padding-block: 7px;
+.icon{
+    background-color: aliceblue;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
 }

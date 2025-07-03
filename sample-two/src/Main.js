@@ -1,13 +1,38 @@
-
+import React from "react"
+import { useState } from "react"
 export function Main(){
-    return <div className="main-content">
-        <h1>Fun facts about React!</h1>
-        <ul className="ul-list">
-            <li>Was first relese in 2013</li>
-            <li>Was originally created by Jorder</li>
-            <li>Has well over 200k stars on Github</li>
-            <li>It maintained by Meta</li>
-            <li>Powers thousands of enterprice apps, Including mobile apps</li>
-        </ul>
-    </div>
+    let [count,setCount]=React.useState(0)
+    function handleDec(){
+        setCount(count=count-1)
+        colorselector()
+    }
+    function handleInc(){
+        setCount(count=count+1);
+        colorselector()
+    }
+    function colorselector(){
+        let countElement=document.getElementById("count");
+        if(count> 0){
+            countElement.style.color="green"
+        }
+        else if(count <0){
+            countElement.style.color="red"
+        }
+        else{
+            countElement.style.color="black"
+        }
+    }
+    return (
+        <div className="counter-app-body">
+            <div className="counter-container">
+                <h3>Counter Application</h3>
+                <div className="counter-section">
+                    <button className="icon" onClick={handleDec}><span className="dec">-</span></button>
+                    <div className="count" id="count">{count}</div>
+                    <button className="icon" onClick={handleInc}><span className="inc">+</span></button>
+                </div>
+                
+            </div>
+        </div>    
+    )
 }
