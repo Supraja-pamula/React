@@ -36,4 +36,11 @@ body{
   background-color: #141413;
   color: #fafaf8;
   border-radius: 6px;
+  padding: 0px 16px;
+  
+}
+.form-section .addIngredients-btn::before{
+  content: "+";
+  left: -4px;
+  position: relative;
 }
