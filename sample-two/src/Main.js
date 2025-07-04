@@ -1,13 +1,18 @@
+import React from "react"
+import { useState } from "react"
 
-export function Main(){
-    return <div className="main-content">
-        <h1>Fun facts about React!</h1>
-        <ul className="ul-list">
-            <li>Was first relese in 2013</li>
-            <li>Was originally created by Jorder</li>
-            <li>Has well over 200k stars on Github</li>
-            <li>It maintained by Meta</li>
-            <li>Powers thousands of enterprice apps, Including mobile apps</li>
-        </ul>
-    </div>
+export function Main() {
+    const [isGoingOut, setIsGoingOut] = React.useState(true);
+    function handleMind() {
+        // setIsGoingOut(!isGoingOut)
+        setIsGoingOut(prev => !prev)
+    }
+    return (
+        <div className="toggle-app-sec">
+            <div className="toggling-container">
+                <h1>Do I feel like going outside?</h1>
+                <button className="decisionEl" onClick={handleMind}>{isGoingOut ? "Yes" : "No"}</button>
+            </div>
+        </div>
+    )
 }
