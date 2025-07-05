@@ -21,6 +21,7 @@ body{
   max-width: 400px;
   flex-grow: 1;
   display: block;
+  padding-left: 10px;
 }
 .form-section{
   display: flex;
@@ -43,4 +44,9 @@ body{
   content: "+";
   left: -4px;
   position: relative;
+}
+.ingredients-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
