@@ -1,13 +1,25 @@
-
+import React, { use } from 'react';
+import emptyStar from './images/empty-star.png';
+import fillStar from './images/fill-star.png';
+import userImg from './images/user.png'
 export function Main(){
-    return <div className="main-content">
-        <h1>Fun facts about React!</h1>
-        <ul className="ul-list">
-            <li>Was first relese in 2013</li>
-            <li>Was originally created by Jorder</li>
-            <li>Has well over 200k stars on Github</li>
-            <li>It maintained by Meta</li>
-            <li>Powers thousands of enterprice apps, Including mobile apps</li>
-        </ul>
+    let [user,setUser]=React.useState({
+        name:"Ajarpus",
+        address:"Khammam",
+        role:"UI Developer",
+        isFavourite:false
+    })
+    function handleFavourite(){
+        setUser((prevUser)=>{
+            return {...prevUser,isFavourite:!prevUser.isFavourite}
+        })
+        console.log(user.isFavourite)
+    }
+    return <div className="student-card">
+        <img src={userImg} className='userImg'/>
+        <h2>Name:{user.name}</h2>
+        <p>Address:{user.address}</p>
+        <p>Role:{user.role}</p>
+        <button className='star-btn' onClick={handleFavourite}><img src={user.isFavourite? fillStar:emptyStar} className='favourite-img'/></button>
     </div>
 }
