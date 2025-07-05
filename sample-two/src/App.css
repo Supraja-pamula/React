@@ -1,3 +1,58 @@
-.appSection{
-  padding: 20px;
+label,
+legend {
+  font-weight: 600;
+  font-size: 16px;
+  min-width: 150px;
+  width: 150px;
+  display: inline-block;
+}
+
+.input-div {
+  margin-bottom: 5px;
+}
+
+fieldset label {
+  font-weight: unset;
+  min-width: unset;
+  font-size: unset;
+  display: flex;
+  align-items: center;
+}
+
+fieldset div {
+  display: flex;
+  flex-direction: column;
+}
+
+legend {
+  min-width: unset;
+  width: unset;
+}
+
+select {
+  height: 30px;
+  min-width: 200px;
+}
+
+.submit-btn {
+  background-color: rgb(11, 11, 132);
+  color: #fff;
+  padding: 7px 14px;
+  border: unset;
+}
+
+form {
+  width: 500px;
+  padding: 40px;
+  border: 1px solid;
+  margin: 10px auto;
+  background-color: #fff;
+}
+
+body {
+  background-color: bisque;
+}
+
+form h1 {
+  margin-top: 0px;
 }
