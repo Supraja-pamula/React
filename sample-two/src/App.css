@@ -1,52 +1,100 @@
-.header{
+.header {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 80px;
   background-color: #fff;
-  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.10) , 0px 1px 2px 0px rgba(0,0,0,0.06);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
 }
-.header span{
+
+.header span {
   font-size: 26px;
   font-weight: 700;
 }
-body{
-  font-family: inter,sans-serif;
+
+body {
+  font-family: inter, sans-serif;
   background-color: #fafaf8;
 }
-.inputElement{
+
+.inputElement {
   border-radius: 6px;
   border: 1px solid #d1d5db;
-  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
   max-width: 400px;
   flex-grow: 1;
   display: block;
   padding-left: 10px;
 }
-.form-section{
+
+.form-section {
   display: flex;
   justify-content: center;
   gap: 11px;
   height: 38px;
   margin: 20px 10px;
 }
-.inputElement::placeholder{
+
+.inputElement::placeholder {
   padding-left: 5px;
 }
-.form-section .addIngredients-btn{
+
+.form-section .addIngredients-btn {
   background-color: #141413;
   color: #fafaf8;
   border-radius: 6px;
   padding: 0px 16px;
-  
+
 }
-.form-section .addIngredients-btn::before{
+
+.form-section .addIngredients-btn::before {
   content: "+";
   left: -4px;
   position: relative;
 }
-.ingredients-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.ingredients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.readyForRecipeSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.readyForRecipe {
+  display: flex;
+  align-items: center;
+  background: rgb(235 233 228);
+  padding: 10px;
+  gap: 10px;
+}
+.readyForRecipe button{
+  background: #e15415;
+  color: #fff;
+  border: unset;
+  padding: 7px 14px;
+  border-radius: 6px;
+}
+.readyForRecipe h4, .readyForRecipe p{
+  margin: 8px;
+}
+.readyForRecipe p{
+  color: #7a736e;
+  margin-top: 20px;
+}
+section{
+  text-align: center;
+}
+.ingredients-list ul{
+  text-align: left;
+}
+.readyForRecipe div{
+  text-align: left;
+}
+section h2{
+  margin-bottom: 0px;
 }
