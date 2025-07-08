@@ -1,4 +1,12 @@
 .box{
-  height: 40px;
-  width: 40px;
+  height: 80px;
+  width: 80px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.boxes-container{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 400px;
 }
